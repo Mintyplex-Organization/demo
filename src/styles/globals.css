@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom {
+    background-image: -webkit-linear-gradient(45deg, #316BFF, #A431FF, #FF73AE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mybtn {
+    --border-radius: 50px;
+    --border-width: 2px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+    cursor: pointer;
+    color: #ffffff80;
+}
+
+.mybtn::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    border: 1px solid;
+    background-image: linear-gradient(87.25deg, #316BFF 10.44%, #A431FF 32.31%, #A431FF 54.83%, #FF73AE 72.55%);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-clip: var(--m-o);
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    transition: all 5s ease-in;
+}
+
+.mybtn:hover::after {
+    background-image: linear-gradient(5deg, #316BFF 10.44%, #A431FF 32.31%, #A431FF 54.83%, #FF73AE 72.55%);
+    transition: all 5s ease-in;
+}
+
+.mybtn:hover {
+    color: #fff !important;
+}
+
+.mybtn,
+.mybtn::after {
+    box-sizing: border-box;
+}
+
+.mybtn:active {
+    --border-width: 2px;
+}
+
+.general-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.general-header input {
+    width: 250px;
+    padding: 12px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    font-style: italic;
+}
+
+.general-header button {
+    background-color: #f5f5f5;
+    font-size: 12px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.general-header button:hover {
+    background-color: #4176FF;
+    color: #fff;
+}
+
+/* .scaling {
+    width: 250px !important;
+} */
+
+.scaling:hover {
+    transform: scale(1.05);
+}
+
+.items-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-details h1,
+.items-details p {
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 8px 12px;
+    color: #3F3F3F;
+    background-color: #f4f4f4;
+}
+
+.follower p {
+    margin-bottom: 10px !important;
+}
+
+.items-details .watchlist {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+    color: #000;
+}
+
+.cardlist {
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.attributes {
+    gap: 10px;
+}
+
+.attributes-details {
+    width: 8rem !important;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: rgba(238, 238, 238, 0.5);
+}
+
+.attributes-details p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.attributes-details h1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.details-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-item p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.details-item span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 769px) {
+    .header-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    .header-text p {
+        padding-inline: 50px;
+        font-size: 17px;
+    }
+
+    .header-btn {
+        justify-content: center;
+    }
+
+    /* .header {
+        flex-direction: column-reverse;
+    } */
+
+    .general-header input {
+        width: 180px;
+    }
+
+    .general-header h1 {
+        font-size: 26px;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .header-text h1 {
+        font-size: 42px;
+    }
+}
+
+body{
+    background: linear-gradient(300deg, rgba(10, 9, 8, 1), #030e26, #0f011b, rgba(10, 9, 8, 1))
+}
