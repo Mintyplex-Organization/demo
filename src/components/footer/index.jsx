@@ -20,7 +20,7 @@ function Footer() {
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">MINTYPLEX</span>
           </Link>
           <div>
-            <p className="m-0 text-center text-[16px] font-[400] max-w-[300px] ">The best aggregator and go-to platform for all Core NFTs.</p>
+            <p className="m-0 text-center text-[16px] font-[400] max-w-[300px] ">The best aggregator and go-to platform for all PolygonNFTs.</p>
           </div>
           <div>
             <p className="flex items-center gap-[5px]">Built with <FaHeart color="red" /> by <Link href='https://mintyplex.com' target='_blank' className="text-brand4">Mintyplex</Link></p>

@@ -31,6 +31,7 @@ module.exports = {
     colors: {
       'bg-dark': '#1C1E1E',
       'brand1': '#4176FF',
+      'brand001': '#ffffff',
       'white': '#FFFFFF',
       'brand2': 'rgba(32, 99, 242, 0.25)',
       'brand3': 'rgba(32, 99, 242)',

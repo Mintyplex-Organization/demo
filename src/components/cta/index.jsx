@@ -10,7 +10,7 @@ export default function CTA() {
         <div className="container my-[50px]">
             <div className="bg-brand9 text-white rounded-[20px] flex flex-col items-center md:px-16 px-[20px] py-[50px] gap-[10px]">
                 <h2 className="text-[20px] md:text-[32px] font-[600] text-center text-gray-900 max-w-[750px] m-0">
-                    <span>We are exploring ways to make trading Core NFTs more fun and seamless for you, and we are open to your suggestions.</span>
+                    <span>We are exploring ways to make trading PolygonNFTs more fun and seamless for you, and we are open to your suggestions.</span>
                 </h2>
 
                 {navigation.map((item) => (

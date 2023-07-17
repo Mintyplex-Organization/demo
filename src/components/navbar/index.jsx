@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaSearch, FaShoppingCart, FaTimes } from "react-icons/fa";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Logo from "@/components/assets/logo.svg";
 import UAuth from "@uauth/js";
 import { IoIosWallet } from "react-icons/io";
@@ -128,7 +129,7 @@ function Navbar() {
             <input type="search" id="search" className="bg-bg-dark/20 border rounded-full block w-full pl-[3em] p-2.5" placeholder="Search for nft collection" required />
           </form>
           <div>
-            <Link href='/featured' className='font-[500] text-[16px] '>Featured</Link>
+            <Link href='/create' className='font-[500] text-[16px] '>Create</Link>
           </div>
         </div>
 
@@ -140,13 +141,13 @@ function Navbar() {
                 <Link href='/discover' className='font-[500] text-[18px]'>Discover</Link>
               </div>
               <div>
-                <Link href='/featured' className='font-[500] text-[18px]'>Featured</Link>
+                <Link href='/create' className='font-[500] text-[18px]'>Create</Link>
               </div>
             </div>
             <div className='flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 force'>
 
-              <PlenaIntegration/>
-
+              <ConnectButton />
+              {/* <PlenaIntegration /> */}
             </div>
           </div>
         </div>
@@ -156,8 +157,8 @@ function Navbar() {
             <FaShoppingCart size={20} />
           </div>
 
-          <PlenaIntegration />
-
+          <ConnectButton />
+          {/* <PlenaIntegration /> */}
         </div>
       </div>
     </div>
@@ -165,3 +166,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
