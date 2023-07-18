@@ -5,11 +5,11 @@ import Link from "next/link";
 function Items({ token }) {
 
   return (
-    <div className="border-[1px] rounded-[10px] p-[10px] flex flex-col w-fit gap-[10px]">
+    <div className="border-[1px] rounded-[10px] border-white p-[10px] flex flex-col w-fit gap-[10px]">
       <div className="w-[140px] md:w-[200px] rounded-[10px] overflow-hidden">
         <Image src={token.image} alt="" />
       </div>
-      <div className="flex justify-between text-[12px] md:text-[14px]">
+      <div className="flex justify-between text-white text-[12px] md:text-[14px]">
         <h1>{token.title} <br /><b>#4534</b></h1>
         <p>Price: <br /> <b>{token.mint_price}</b></p>
       </div>

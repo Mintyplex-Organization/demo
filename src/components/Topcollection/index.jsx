@@ -51,29 +51,29 @@ const TopCollection = () => {
                 <h1 className="text-[28px] font-[600]">Trending Collection</h1>
                 {/* <input type="search" name="search" placeholder='search' id="" onChange={inputHandler} /> */}
             </div>
-            <div className='scrollbar-hide border rounded-[20px] text-white'>
-                <table className="text-sm font-[grotesk] text-left w-full">
+            <div className='scrollbar-hide border rounded-[20px] text-brand3 text-white'>
+                <table className="text-sm font-grotesk text-left w-full">
                     <thead className="text-sm font-bold bg-blue-100 border-b">
                         <tr>
-                            <th scope="col" className="px-5 py-5">
+                            <th scope="col" className="px-5 font-grotesk py-5">
                                 No.
                             </th>
-                            <th scope="col" className="px-5 py-5">
+                            <th scope="col" className="px-5 font-grotesk py-5">
                                 Collections
                             </th>
-                            <th scope="col" className="px-5 py-5 md:inline-block hidden">
+                            <th scope="col" className="px-5 font-grotesk py-5 md:inline-block hidden">
                                 Volume
                             </th>
-                            <th scope="col" className="px-5 py-5 md:inline-block hidden">
+                            <th scope="col" className="px-5 font-grotesk py-5 md:inline-block hidden">
                                 Total Supply
                             </th>
-                            <th scope="col" className="px-5 py-5">
+                            <th scope="col" className="px-5 font-grotesk py-5">
                                 Floor Price
                             </th>
                         </tr>
                     </thead>
                     {/* <tbody className="font-[grotesk]" input={inputText}> */}
-                    <tbody className="font-[grotesk]">
+                    <tbody className="font-grotesk">
                         <tr className="border-b">
                             <th scope="row" className="px-5 py-5 font-medium">1.</th>
                             <td className="px-5 py-5">

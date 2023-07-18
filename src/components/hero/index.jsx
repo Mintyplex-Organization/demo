@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 
-const textTyped = 'Discover, Analyze, and Buy Core NFTs easily.'
+const textTyped = 'Discover, Analyze, and Buy Polygon NFTs easily.'
 
 
 function Hero() {

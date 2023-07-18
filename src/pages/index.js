@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import PageLayout from '@/components/layout'
 import Hero from '@/components/hero'
 import NewsLetter from '@/components/newsletter'
@@ -8,7 +7,7 @@ import RecentListing from '@/components/recentlisting'
 import FeaturedCollection from '@/components/featuredcollection'
 import PlenaIntegration from '@/components/plena'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
